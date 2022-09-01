@@ -29,6 +29,17 @@ public class FizzBuzzTest {
         //then
         assertEquals(expected, actual);
     }
+    @Test
+    void should_retun_Buzz_when_count_off_given_multiple_of_5() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expected = "Buzz";
+        //when
+        String actual = fizzBuzz.countOff(5);
+        //then
+        assertEquals(expected, actual);
+    }
+
 
     
 }
