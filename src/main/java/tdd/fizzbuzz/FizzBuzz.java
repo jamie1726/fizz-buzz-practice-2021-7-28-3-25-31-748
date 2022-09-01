@@ -4,7 +4,7 @@ public class FizzBuzz {
 
     public String countOff(int order){
 
-        //return String.valueOf(order);
+        return String.valueOf(order);
     }
 
 }
