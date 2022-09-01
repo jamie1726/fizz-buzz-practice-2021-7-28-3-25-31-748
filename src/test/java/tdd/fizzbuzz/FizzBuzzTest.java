@@ -30,7 +30,7 @@ public class FizzBuzzTest {
         assertEquals(expected, actual);
     }
     @Test
-    void should_retun_Buzz_when_count_off_given_multiple_of_5() {
+    void should_return_Buzz_when_count_off_given_multiple_of_5() {
         //given
         FizzBuzz fizzBuzz = new FizzBuzz();
         String expected = "Buzz";
@@ -39,7 +39,16 @@ public class FizzBuzzTest {
         //then
         assertEquals(expected, actual);
     }
-
+    @Test
+    void should_return_Whizz_when_count_off_given_multiple_of_7() {
+        //given
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        String expected = "Whizz";
+        //when
+        String actual = fizzBuzz.countOff(7);
+        //then
+        assertEquals(expected, actual);
+    }
 
     
 }
